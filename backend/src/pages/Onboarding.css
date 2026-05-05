@@ -1,0 +1,110 @@
+.onboarding-screen {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a2e;
+}
+
+.onboarding-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.onboarding-image {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.onboarding-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.onboarding-text h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.onboarding-text p {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.onboarding-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-indicators {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  width: 24px;
+  border-radius: 4px;
+  background: #4f46e5;
+}
+
+.next-btn {
+  padding: 0.8rem 2rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+/* Dark mode overrides if needed */
+.dark-theme .onboarding-screen {
+  background: #0f0f1a;
+  color: white;
+}
+
+.dark-theme .onboarding-text h2 {
+  color: white;
+}
+
+.dark-theme .onboarding-text p {
+  color: #9ca3af;
+}
+
+.dark-theme .indicator {
+  background: #374151;
+}
+
+.dark-theme .indicator.active {
+  background: #6366f1;
+}

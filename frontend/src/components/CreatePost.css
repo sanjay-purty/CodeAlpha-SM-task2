@@ -1,0 +1,144 @@
+.create-post-hub {
+  width: 100%;
+}
+
+.create-post-main {
+  display: flex;
+  gap: 12px;
+}
+
+.hub-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.create-post-input-section {
+  flex: 1;
+}
+
+.create-post-input-section textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  padding: 12px 0;
+  resize: none;
+  min-height: 50px;
+  max-height: 400px;
+  color: var(--text-main);
+  outline: none;
+}
+
+.preview-wrapper {
+  position: relative;
+  margin-top: 12px;
+}
+
+.post-preview {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.remove-preview {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-post-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.media-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.action-icon-btn:hover {
+  background-color: var(--primary-glow);
+}
+
+@media (max-width: 650px) {
+  .action-icon-btn span {
+    display: none;
+  }
+  .media-actions {
+    gap: 4px;
+  }
+}
+
+.post-submit-btn {
+  padding: 8px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  height: 40px;
+}
+.emoji-picker-container {
+  position: relative;
+}
+
+.emoji-popup {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  z-index: 2000;
+  width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-item {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-item:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.post-submit-btn:disabled {
+  opacity: 0.5;
+}
